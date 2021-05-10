@@ -13,6 +13,8 @@
   
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
 
   
   
@@ -29,6 +31,7 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
         <script src="_static/jquery.js"></script>
         <script src="_static/underscore.js"></script>
         <script src="_static/doctools.js"></script>
@@ -187,8 +190,8 @@
 </dd>
 </dl>
 <dl class="py class">
-<dt id="pip_services3_rpc.services.HttpEndpoint.HttpEndpoint">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">pip_services3_rpc.services.HttpEndpoint.</span></code><code class="sig-name descname"><span class="pre">HttpEndpoint</span></code><a class="headerlink" href="#pip_services3_rpc.services.HttpEndpoint.HttpEndpoint" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pip_services3_rpc.services.HttpEndpoint.HttpEndpoint">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">pip_services3_rpc.services.HttpEndpoint.</span></span><span class="sig-name descname"><span class="pre">HttpEndpoint</span></span><a class="headerlink" href="#pip_services3_rpc.services.HttpEndpoint.HttpEndpoint" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">pip_services3_commons.run.IOpenable.IOpenable</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">pip_services3_commons.config.IConfigurable.IConfigurable</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">pip_services3_commons.refer.IReferenceable.IReferenceable</span></code></p>
 <p>Used for creating HTTP endpoints. An endpoint is a URL, at which a given service can be accessed by a client.</p>
 <dl class="simple">
@@ -228,8 +231,8 @@
 </pre></div>
 </div>
 <dl class="py method">
-<dt id="pip_services3_rpc.services.HttpEndpoint.HttpEndpoint.close">
-<code class="sig-name descname"><span class="pre">close</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">correlation_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services3_rpc.services.HttpEndpoint.HttpEndpoint.close" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pip_services3_rpc.services.HttpEndpoint.HttpEndpoint.close">
+<span class="sig-name descname"><span class="pre">close</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">correlation_id</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services3_rpc.services.HttpEndpoint.HttpEndpoint.close" title="Permalink to this definition">¶</a></dt>
 <dd><p>Closes this endpoint and the REST server (service) that was opened earlier.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -239,8 +242,8 @@
 </dd></dl>
 
 <dl class="py method">
-<dt id="pip_services3_rpc.services.HttpEndpoint.HttpEndpoint.configure">
-<code class="sig-name descname"><span class="pre">configure</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">config</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services3_rpc.services.HttpEndpoint.HttpEndpoint.configure" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pip_services3_rpc.services.HttpEndpoint.HttpEndpoint.configure">
+<span class="sig-name descname"><span class="pre">configure</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">config</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">pip_services3_commons.config.ConfigParams.ConfigParams</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services3_rpc.services.HttpEndpoint.HttpEndpoint.configure" title="Permalink to this definition">¶</a></dt>
 <dd><p>Configures this HttpEndpoint using the given configuration parameters.
 - connection(s) - the connection resolver’s connections;</p>
 <blockquote>
@@ -260,28 +263,24 @@
 </dd></dl>
 
 <dl class="py method">
-<dt id="pip_services3_rpc.services.HttpEndpoint.HttpEndpoint.__fix_route">
-<code class="sig-name descname"><span class="pre">__fix_route</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">route</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">str</span><a class="headerlink" href="#pip_services3_rpc.services.HttpEndpoint.HttpEndpoint.__fix_route" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pip_services3_rpc.services.HttpEndpoint.HttpEndpoint.get_correlation_id">
+<span class="sig-name descname"><span class="pre">get_correlation_id</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><a class="headerlink" href="#pip_services3_rpc.services.HttpEndpoint.HttpEndpoint.get_correlation_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns correlationId from request</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Returns correlationId from request</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pip_services3_rpc.services.HttpEndpoint.HttpEndpoint.get_param">
+<span class="sig-name descname"><span class="pre">get_param</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">param</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">default</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services3_rpc.services.HttpEndpoint.HttpEndpoint.get_param" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
-<dt id="pip_services3_rpc.services.HttpEndpoint.HttpEndpoint._get_correlation_id">
-<code class="sig-name descname"><span class="pre">_get_correlation_id</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pip_services3_rpc.services.HttpEndpoint.HttpEndpoint._get_correlation_id" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="pip_services3_rpc.services.HttpEndpoint.HttpEndpoint.get_data">
-<code class="sig-name descname"><span class="pre">get_data</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pip_services3_rpc.services.HttpEndpoint.HttpEndpoint.get_data" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="pip_services3_rpc.services.HttpEndpoint.HttpEndpoint.get_param">
-<code class="sig-name descname"><span class="pre">get_param</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">param</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">default</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services3_rpc.services.HttpEndpoint.HttpEndpoint.get_param" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="pip_services3_rpc.services.HttpEndpoint.HttpEndpoint.is_opened">
-<code class="sig-name descname"><span class="pre">is_opened</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pip_services3_rpc.services.HttpEndpoint.HttpEndpoint.is_opened" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pip_services3_rpc.services.HttpEndpoint.HttpEndpoint.is_open">
+<span class="sig-name descname"><span class="pre">is_open</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <span class="pre">bool</span><a class="headerlink" href="#pip_services3_rpc.services.HttpEndpoint.HttpEndpoint.is_open" title="Permalink to this definition">¶</a></dt>
 <dd><p>Checks if the component is opened.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
@@ -291,8 +290,8 @@
 </dd></dl>
 
 <dl class="py method">
-<dt id="pip_services3_rpc.services.HttpEndpoint.HttpEndpoint.open">
-<code class="sig-name descname"><span class="pre">open</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">correlation_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services3_rpc.services.HttpEndpoint.HttpEndpoint.open" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pip_services3_rpc.services.HttpEndpoint.HttpEndpoint.open">
+<span class="sig-name descname"><span class="pre">open</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">correlation_id</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services3_rpc.services.HttpEndpoint.HttpEndpoint.open" title="Permalink to this definition">¶</a></dt>
 <dd><p>Opens a connection using the parameters resolved by the referenced connection resolver and creates a REST server (service) using the set options and parameters.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -302,13 +301,8 @@
 </dd></dl>
 
 <dl class="py method">
-<dt id="pip_services3_rpc.services.HttpEndpoint.HttpEndpoint.__perform_registrations">
-<code class="sig-name descname"><span class="pre">__perform_registrations</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pip_services3_rpc.services.HttpEndpoint.HttpEndpoint.__perform_registrations" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="pip_services3_rpc.services.HttpEndpoint.HttpEndpoint.register">
-<code class="sig-name descname"><span class="pre">register</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">registration</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services3_rpc.services.HttpEndpoint.HttpEndpoint.register" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pip_services3_rpc.services.HttpEndpoint.HttpEndpoint.register">
+<span class="sig-name descname"><span class="pre">register</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">registration:</span> <span class="pre">&lt;module</span> <span class="pre">'pip_services3_rpc.services.IRegisterable'</span> <span class="pre">from</span> <span class="pre">'/pip_services3_rpc/services/IRegisterable.py'&gt;</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services3_rpc.services.HttpEndpoint.HttpEndpoint.register" title="Permalink to this definition">¶</a></dt>
 <dd><p>Registers a registerable object for dynamic endpoint discovery.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -318,8 +312,8 @@
 </dd></dl>
 
 <dl class="py method">
-<dt id="pip_services3_rpc.services.HttpEndpoint.HttpEndpoint.register_interceptor">
-<code class="sig-name descname"><span class="pre">register_interceptor</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">route</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">action</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services3_rpc.services.HttpEndpoint.HttpEndpoint.register_interceptor" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pip_services3_rpc.services.HttpEndpoint.HttpEndpoint.register_interceptor">
+<span class="sig-name descname"><span class="pre">register_interceptor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">route</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">action</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Callable</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services3_rpc.services.HttpEndpoint.HttpEndpoint.register_interceptor" title="Permalink to this definition">¶</a></dt>
 <dd><p>Registers a middleware action for the given route.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -332,8 +326,8 @@
 </dd></dl>
 
 <dl class="py method">
-<dt id="pip_services3_rpc.services.HttpEndpoint.HttpEndpoint.register_route">
-<code class="sig-name descname"><span class="pre">register_route</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">method</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">route</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">schema</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">handler</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services3_rpc.services.HttpEndpoint.HttpEndpoint.register_route" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pip_services3_rpc.services.HttpEndpoint.HttpEndpoint.register_route">
+<span class="sig-name descname"><span class="pre">register_route</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">method</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">route</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">schema</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">pip_services3_commons.validate.Schema.Schema</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">handler</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Callable</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services3_rpc.services.HttpEndpoint.HttpEndpoint.register_route" title="Permalink to this definition">¶</a></dt>
 <dd><p>Registers an action in this objects REST server (service) by the given method and route.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -348,8 +342,8 @@
 </dd></dl>
 
 <dl class="py method">
-<dt id="pip_services3_rpc.services.HttpEndpoint.HttpEndpoint.register_route_with_auth">
-<code class="sig-name descname"><span class="pre">register_route_with_auth</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">method</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">route</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">schema</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">authorize</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">action</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services3_rpc.services.HttpEndpoint.HttpEndpoint.register_route_with_auth" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pip_services3_rpc.services.HttpEndpoint.HttpEndpoint.register_route_with_auth">
+<span class="sig-name descname"><span class="pre">register_route_with_auth</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">method</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">route</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">schema</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">pip_services3_commons.validate.Schema.Schema</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">authorize</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Callable</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">action</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Callable</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services3_rpc.services.HttpEndpoint.HttpEndpoint.register_route_with_auth" title="Permalink to this definition">¶</a></dt>
 <dd><p>Registers an action with authorization in this objects REST server (service)
 by the given method and route.</p>
 <dl class="field-list simple">
@@ -366,8 +360,8 @@ by the given method and route.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="pip_services3_rpc.services.HttpEndpoint.HttpEndpoint.set_references">
-<code class="sig-name descname"><span class="pre">set_references</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">references</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services3_rpc.services.HttpEndpoint.HttpEndpoint.set_references" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pip_services3_rpc.services.HttpEndpoint.HttpEndpoint.set_references">
+<span class="sig-name descname"><span class="pre">set_references</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">references</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">pip_services3_commons.refer.IReferences.IReferences</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services3_rpc.services.HttpEndpoint.HttpEndpoint.set_references" title="Permalink to this definition">¶</a></dt>
 <dd><p>Sets references to this endpoint’s logger, counters, and connection resolver.</p>
 <ul class="simple">
 <li><p><em>:logger:</em>:<a href="#id1"><span class="problematic" id="id2">*</span></a>:1.0           (optional) <code class="xref py py-class docutils literal notranslate"><span class="pre">ILogger</span></code> components to pass log messages</p></li>
@@ -382,8 +376,8 @@ by the given method and route.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="pip_services3_rpc.services.HttpEndpoint.HttpEndpoint.unregister">
-<code class="sig-name descname"><span class="pre">unregister</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">registration</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services3_rpc.services.HttpEndpoint.HttpEndpoint.unregister" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pip_services3_rpc.services.HttpEndpoint.HttpEndpoint.unregister">
+<span class="sig-name descname"><span class="pre">unregister</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">registration:</span> <span class="pre">&lt;module</span> <span class="pre">'pip_services3_rpc.services.IRegisterable'</span> <span class="pre">from</span> <span class="pre">'/pip_services3_rpc/services/IRegisterable.py'&gt;</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services3_rpc.services.HttpEndpoint.HttpEndpoint.unregister" title="Permalink to this definition">¶</a></dt>
 <dd><p>Unregisters a registerable object, so that it is no longer used in dynamic endpoint discovery.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>

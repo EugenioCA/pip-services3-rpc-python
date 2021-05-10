@@ -17,6 +17,7 @@ Submodules
    pip_services3_rpc.services.HttpResponseSender
    pip_services3_rpc.services.IRegisterable
    pip_services3_rpc.services.ISwaggerService
+   pip_services3_rpc.services.InstrumentTiming
    pip_services3_rpc.services.RestOperations
    pip_services3_rpc.services.RestQueryParams
    pip_services3_rpc.services.RestService

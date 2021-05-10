@@ -13,6 +13,8 @@
   
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
 
   
   
@@ -29,6 +31,7 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
         <script src="_static/jquery.js"></script>
         <script src="_static/underscore.js"></script>
         <script src="_static/doctools.js"></script>
@@ -175,13 +178,13 @@
   <div class="section" id="module-pip_services3_rpc.test.TestRestClient">
 <span id="pip-services3-rpc-test-testrestclient-module"></span><h1>pip_services3_rpc.test.TestRestClient module<a class="headerlink" href="#module-pip_services3_rpc.test.TestRestClient" title="Permalink to this headline">¶</a></h1>
 <dl class="py class">
-<dt id="pip_services3_rpc.test.TestRestClient.TestRestClient">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">pip_services3_rpc.test.TestRestClient.</span></code><code class="sig-name descname"><span class="pre">TestRestClient</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">base_route</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services3_rpc.test.TestRestClient.TestRestClient" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pip_services3_rpc.test.TestRestClient.TestRestClient">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">pip_services3_rpc.test.TestRestClient.</span></span><span class="sig-name descname"><span class="pre">TestRestClient</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">base_route</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services3_rpc.test.TestRestClient.TestRestClient" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="pip_services3_rpc.clients.RestClient.html#pip_services3_rpc.clients.RestClient.RestClient" title="pip_services3_rpc.clients.RestClient.RestClient"><code class="xref py py-class docutils literal notranslate"><span class="pre">pip_services3_rpc.clients.RestClient.RestClient</span></code></a></p>
 <p>REST client used for automated testing.</p>
 <dl class="py method">
-<dt id="pip_services3_rpc.test.TestRestClient.TestRestClient.call">
-<code class="sig-name descname"><span class="pre">call</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">method</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">route</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">correlation_id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">params</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services3_rpc.test.TestRestClient.TestRestClient.call" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pip_services3_rpc.test.TestRestClient.TestRestClient.call">
+<span class="sig-name descname"><span class="pre">call</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">method</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">route</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">correlation_id</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">params</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">Any</span><a class="headerlink" href="#pip_services3_rpc.test.TestRestClient.TestRestClient.call" title="Permalink to this definition">¶</a></dt>
 <dd><p>Calls a remote method via HTTP/REST protocol.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>

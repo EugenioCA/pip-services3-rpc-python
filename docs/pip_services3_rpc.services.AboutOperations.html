@@ -13,6 +13,8 @@
   
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
 
   
   
@@ -29,6 +31,7 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
         <script src="_static/jquery.js"></script>
         <script src="_static/underscore.js"></script>
         <script src="_static/doctools.js"></script>
@@ -176,27 +179,22 @@
   <div class="section" id="module-pip_services3_rpc.services.AboutOperations">
 <span id="pip-services3-rpc-services-aboutoperations-module"></span><h1>pip_services3_rpc.services.AboutOperations module<a class="headerlink" href="#module-pip_services3_rpc.services.AboutOperations" title="Permalink to this headline">¶</a></h1>
 <dl class="py class">
-<dt id="pip_services3_rpc.services.AboutOperations.AboutOperations">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">pip_services3_rpc.services.AboutOperations.</span></code><code class="sig-name descname"><span class="pre">AboutOperations</span></code><a class="headerlink" href="#pip_services3_rpc.services.AboutOperations.AboutOperations" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pip_services3_rpc.services.AboutOperations.AboutOperations">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">pip_services3_rpc.services.AboutOperations.</span></span><span class="sig-name descname"><span class="pre">AboutOperations</span></span><a class="headerlink" href="#pip_services3_rpc.services.AboutOperations.AboutOperations" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="pip_services3_rpc.services.RestOperations.html#pip_services3_rpc.services.RestOperations.RestOperations" title="pip_services3_rpc.services.RestOperations.RestOperations"><code class="xref py py-class docutils literal notranslate"><span class="pre">pip_services3_rpc.services.RestOperations.RestOperations</span></code></a></p>
 <dl class="py method">
-<dt id="pip_services3_rpc.services.AboutOperations.AboutOperations.get_about">
-<code class="sig-name descname"><span class="pre">get_about</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">req</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">res</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services3_rpc.services.AboutOperations.AboutOperations.get_about" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pip_services3_rpc.services.AboutOperations.AboutOperations.get_about">
+<span class="sig-name descname"><span class="pre">get_about</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <span class="pre">str</span><a class="headerlink" href="#pip_services3_rpc.services.AboutOperations.AboutOperations.get_about" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
-<dt id="pip_services3_rpc.services.AboutOperations.AboutOperations.get_about_operation">
-<code class="sig-name descname"><span class="pre">get_about_operation</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pip_services3_rpc.services.AboutOperations.AboutOperations.get_about_operation" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pip_services3_rpc.services.AboutOperations.AboutOperations.get_about_operation">
+<span class="sig-name descname"><span class="pre">get_about_operation</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <span class="pre">Callable</span><a class="headerlink" href="#pip_services3_rpc.services.AboutOperations.AboutOperations.get_about_operation" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
-<dt id="pip_services3_rpc.services.AboutOperations.AboutOperations.__get_network_adresses">
-<code class="sig-name descname"><span class="pre">__get_network_adresses</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pip_services3_rpc.services.AboutOperations.AboutOperations.__get_network_adresses" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="pip_services3_rpc.services.AboutOperations.AboutOperations.set_references">
-<code class="sig-name descname"><span class="pre">set_references</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">references</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services3_rpc.services.AboutOperations.AboutOperations.set_references" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pip_services3_rpc.services.AboutOperations.AboutOperations.set_references">
+<span class="sig-name descname"><span class="pre">set_references</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">references</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">pip_services3_commons.refer.IReferences.IReferences</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services3_rpc.services.AboutOperations.AboutOperations.set_references" title="Permalink to this definition">¶</a></dt>
 <dd><p>Sets references to dependent components.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>

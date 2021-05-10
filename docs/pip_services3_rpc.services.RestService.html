@@ -13,6 +13,8 @@
   
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
 
   
   
@@ -29,6 +31,7 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
         <script src="_static/jquery.js"></script>
         <script src="_static/underscore.js"></script>
         <script src="_static/doctools.js"></script>
@@ -187,8 +190,8 @@
 </dd>
 </dl>
 <dl class="py class">
-<dt id="pip_services3_rpc.services.RestService.RestService">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">pip_services3_rpc.services.RestService.</span></code><code class="sig-name descname"><span class="pre">RestService</span></code><a class="headerlink" href="#pip_services3_rpc.services.RestService.RestService" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pip_services3_rpc.services.RestService.RestService">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">pip_services3_rpc.services.RestService.</span></span><span class="sig-name descname"><span class="pre">RestService</span></span><a class="headerlink" href="#pip_services3_rpc.services.RestService.RestService" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">pip_services3_commons.run.IOpenable.IOpenable</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">pip_services3_commons.config.IConfigurable.IConfigurable</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">pip_services3_commons.refer.IReferenceable.IReferenceable</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">pip_services3_commons.refer.IUnreferenceable.IUnreferenceable</span></code>, <a class="reference internal" href="pip_services3_rpc.services.IRegisterable.html#pip_services3_rpc.services.IRegisterable.IRegisterable" title="pip_services3_rpc.services.IRegisterable.IRegisterable"><code class="xref py py-class docutils literal notranslate"><span class="pre">pip_services3_rpc.services.IRegisterable.IRegisterable</span></code></a></p>
 <p>Abstract service that receives remove calls via HTTP/REST protocol.</p>
 <dl class="simple">
@@ -248,8 +251,8 @@
 </pre></div>
 </div>
 <dl class="py method">
-<dt id="pip_services3_rpc.services.RestService.RestService.close">
-<code class="sig-name descname"><span class="pre">close</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">correlation_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services3_rpc.services.RestService.RestService.close" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pip_services3_rpc.services.RestService.RestService.close">
+<span class="sig-name descname"><span class="pre">close</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">correlation_id</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services3_rpc.services.RestService.RestService.close" title="Permalink to this definition">¶</a></dt>
 <dd><p>Closes component and frees used resources.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -259,8 +262,8 @@
 </dd></dl>
 
 <dl class="py method">
-<dt id="pip_services3_rpc.services.RestService.RestService.configure">
-<code class="sig-name descname"><span class="pre">configure</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">config</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services3_rpc.services.RestService.RestService.configure" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pip_services3_rpc.services.RestService.RestService.configure">
+<span class="sig-name descname"><span class="pre">configure</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">config</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">pip_services3_commons.config.ConfigParams.ConfigParams</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services3_rpc.services.RestService.RestService.configure" title="Permalink to this definition">¶</a></dt>
 <dd><p>Configures component by passing configuration parameters.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -270,28 +273,28 @@
 </dd></dl>
 
 <dl class="py method">
-<dt id="pip_services3_rpc.services.RestService.RestService.create_endpoint">
-<code class="sig-name descname"><span class="pre">create_endpoint</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pip_services3_rpc.services.RestService.RestService.create_endpoint" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pip_services3_rpc.services.RestService.RestService.create_endpoint">
+<span class="sig-name descname"><span class="pre">create_endpoint</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pip_services3_rpc.services.RestService.RestService.create_endpoint" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
-<dt id="pip_services3_rpc.services.RestService.RestService.__fix_route">
-<code class="sig-name descname"><span class="pre">__fix_route</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">route</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">str</span><a class="headerlink" href="#pip_services3_rpc.services.RestService.RestService.__fix_route" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pip_services3_rpc.services.RestService.RestService.fix_route">
+<span class="sig-name descname"><span class="pre">fix_route</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">route</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">str</span><a class="headerlink" href="#pip_services3_rpc.services.RestService.RestService.fix_route" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
-<dt id="pip_services3_rpc.services.RestService.RestService.get_data">
-<code class="sig-name descname"><span class="pre">get_data</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pip_services3_rpc.services.RestService.RestService.get_data" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pip_services3_rpc.services.RestService.RestService.get_data">
+<span class="sig-name descname"><span class="pre">get_data</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pip_services3_rpc.services.RestService.RestService.get_data" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
-<dt id="pip_services3_rpc.services.RestService.RestService.get_request_param">
-<code class="sig-name descname"><span class="pre">get_request_param</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pip_services3_rpc.services.RestService.RestService.get_request_param" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pip_services3_rpc.services.RestService.RestService.get_request_param">
+<span class="sig-name descname"><span class="pre">get_request_param</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pip_services3_rpc.services.RestService.RestService.get_request_param" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
-<dt id="pip_services3_rpc.services.RestService.RestService.is_opened">
-<code class="sig-name descname"><span class="pre">is_opened</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pip_services3_rpc.services.RestService.RestService.is_opened" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pip_services3_rpc.services.RestService.RestService.is_open">
+<span class="sig-name descname"><span class="pre">is_open</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <span class="pre">bool</span><a class="headerlink" href="#pip_services3_rpc.services.RestService.RestService.is_open" title="Permalink to this definition">¶</a></dt>
 <dd><p>Checks if the component is opened.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
@@ -301,8 +304,8 @@
 </dd></dl>
 
 <dl class="py method">
-<dt id="pip_services3_rpc.services.RestService.RestService.open">
-<code class="sig-name descname"><span class="pre">open</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">correlation_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services3_rpc.services.RestService.RestService.open" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pip_services3_rpc.services.RestService.RestService.open">
+<span class="sig-name descname"><span class="pre">open</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">correlation_id</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services3_rpc.services.RestService.RestService.open" title="Permalink to this definition">¶</a></dt>
 <dd><p>Opens the component.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -312,16 +315,16 @@
 </dd></dl>
 
 <dl class="py method">
-<dt id="pip_services3_rpc.services.RestService.RestService.register">
-<code class="sig-name descname"><span class="pre">register</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pip_services3_rpc.services.RestService.RestService.register" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pip_services3_rpc.services.RestService.RestService.register">
+<em class="property"><span class="pre">abstract</span> </em><span class="sig-name descname"><span class="pre">register</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pip_services3_rpc.services.RestService.RestService.register" title="Permalink to this definition">¶</a></dt>
 <dd><p>Registers all service routes in HTTP endpoint.</p>
 <p>This method is called by the service and must be overriden
 in child classes.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="pip_services3_rpc.services.RestService.RestService.register_interceptor">
-<code class="sig-name descname"><span class="pre">register_interceptor</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">route</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">action</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services3_rpc.services.RestService.RestService.register_interceptor" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pip_services3_rpc.services.RestService.RestService.register_interceptor">
+<span class="sig-name descname"><span class="pre">register_interceptor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">route</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">action</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Callable</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services3_rpc.services.RestService.RestService.register_interceptor" title="Permalink to this definition">¶</a></dt>
 <dd><p>Registers a middleware for a given route in HTTP endpoint.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -334,8 +337,8 @@ in child classes.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="pip_services3_rpc.services.RestService.RestService.register_route">
-<code class="sig-name descname"><span class="pre">register_route</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">method</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">route</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">schema</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">handler</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services3_rpc.services.RestService.RestService.register_route" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pip_services3_rpc.services.RestService.RestService.register_route">
+<span class="sig-name descname"><span class="pre">register_route</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">method</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">route</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">schema</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">pip_services3_commons.validate.Schema.Schema</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">handler</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Callable</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services3_rpc.services.RestService.RestService.register_route" title="Permalink to this definition">¶</a></dt>
 <dd><p>Registers an action in this objects REST server (service) by the given method and route.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -350,8 +353,8 @@ in child classes.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="pip_services3_rpc.services.RestService.RestService.register_route_with_auth">
-<code class="sig-name descname"><span class="pre">register_route_with_auth</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">method</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">route</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">schema</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">authorize</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">action</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services3_rpc.services.RestService.RestService.register_route_with_auth" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pip_services3_rpc.services.RestService.RestService.register_route_with_auth">
+<span class="sig-name descname"><span class="pre">register_route_with_auth</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">method</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">route</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">schema</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">pip_services3_commons.validate.Schema.Schema</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">authorize</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Callable</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">action</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Callable</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services3_rpc.services.RestService.RestService.register_route_with_auth" title="Permalink to this definition">¶</a></dt>
 <dd><p>Registers a route with authorization in HTTP endpoint.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -367,8 +370,8 @@ in child classes.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="pip_services3_rpc.services.RestService.RestService.send_created_result">
-<code class="sig-name descname"><span class="pre">send_created_result</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">result</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services3_rpc.services.RestService.RestService.send_created_result" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pip_services3_rpc.services.RestService.RestService.send_created_result">
+<span class="sig-name descname"><span class="pre">send_created_result</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">result</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><a class="headerlink" href="#pip_services3_rpc.services.RestService.RestService.send_created_result" title="Permalink to this definition">¶</a></dt>
 <dd><p>Creates a callback function that sends newly created object as JSON. That callack function call be called directly or passed as a parameter to business logic components.</p>
 <p>If object is not null it returns 201 status code. For null results it returns
 204 status code. If error occur it sends ErrorDescription with approproate status code.</p>
@@ -383,8 +386,8 @@ in child classes.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="pip_services3_rpc.services.RestService.RestService.send_deleted_result">
-<code class="sig-name descname"><span class="pre">send_deleted_result</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">result</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services3_rpc.services.RestService.RestService.send_deleted_result" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pip_services3_rpc.services.RestService.RestService.send_deleted_result">
+<span class="sig-name descname"><span class="pre">send_deleted_result</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">result</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><a class="headerlink" href="#pip_services3_rpc.services.RestService.RestService.send_deleted_result" title="Permalink to this definition">¶</a></dt>
 <dd><p>Creates a callback function that sends newly created object as JSON. That callack function call be called directly or passed as a parameter to business logic components.</p>
 <p>If object is not null it returns 200 status code. For null results it returns
 204 status code. If error occur it sends ErrorDescription with approproate status code.</p>
@@ -399,8 +402,8 @@ in child classes.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="pip_services3_rpc.services.RestService.RestService.send_error">
-<code class="sig-name descname"><span class="pre">send_error</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">error</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services3_rpc.services.RestService.RestService.send_error" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pip_services3_rpc.services.RestService.RestService.send_error">
+<span class="sig-name descname"><span class="pre">send_error</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">error</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">str</span><a class="headerlink" href="#pip_services3_rpc.services.RestService.RestService.send_error" title="Permalink to this definition">¶</a></dt>
 <dd><p>Sends error serialized as ErrorDescription object and appropriate HTTP status code. If status code is not defined, it uses 500 status code.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -410,8 +413,8 @@ in child classes.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="pip_services3_rpc.services.RestService.RestService.send_result">
-<code class="sig-name descname"><span class="pre">send_result</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">result</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services3_rpc.services.RestService.RestService.send_result" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pip_services3_rpc.services.RestService.RestService.send_result">
+<span class="sig-name descname"><span class="pre">send_result</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">result</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><a class="headerlink" href="#pip_services3_rpc.services.RestService.RestService.send_result" title="Permalink to this definition">¶</a></dt>
 <dd><p>Creates a callback function that sends result as JSON object. That callack function call be called directly or passed as a parameter to business logic components.</p>
 <p>If object is not null it returns 200 status code. For null results it returns
 204 status code. If error occur it sends ErrorDescription with approproate status code.</p>
@@ -426,8 +429,8 @@ in child classes.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="pip_services3_rpc.services.RestService.RestService.set_references">
-<code class="sig-name descname"><span class="pre">set_references</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">references</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services3_rpc.services.RestService.RestService.set_references" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pip_services3_rpc.services.RestService.RestService.set_references">
+<span class="sig-name descname"><span class="pre">set_references</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">references</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">pip_services3_commons.refer.IReferences.IReferences</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services3_rpc.services.RestService.RestService.set_references" title="Permalink to this definition">¶</a></dt>
 <dd><p>Sets references to dependent components.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -437,8 +440,8 @@ in child classes.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="pip_services3_rpc.services.RestService.RestService.unset_references">
-<code class="sig-name descname"><span class="pre">unset_references</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pip_services3_rpc.services.RestService.RestService.unset_references" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pip_services3_rpc.services.RestService.RestService.unset_references">
+<span class="sig-name descname"><span class="pre">unset_references</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pip_services3_rpc.services.RestService.RestService.unset_references" title="Permalink to this definition">¶</a></dt>
 <dd><p>Unsets (clears) previously set references to dependent components.</p>
 </dd></dl>
 

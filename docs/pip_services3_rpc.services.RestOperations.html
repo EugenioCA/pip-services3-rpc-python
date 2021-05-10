@@ -13,6 +13,8 @@
   
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
 
   
   
@@ -29,6 +31,7 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
         <script src="_static/jquery.js"></script>
         <script src="_static/underscore.js"></script>
         <script src="_static/doctools.js"></script>
@@ -39,7 +42,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="pip_services3_rpc.services.RestQueryParams module" href="pip_services3_rpc.services.RestQueryParams.html" />
-    <link rel="prev" title="pip_services3_rpc.services.ISwaggerService module" href="pip_services3_rpc.services.ISwaggerService.html" /> 
+    <link rel="prev" title="pip_services3_rpc.services.InstrumentTiming module" href="pip_services3_rpc.services.InstrumentTiming.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -176,12 +179,12 @@
   <div class="section" id="module-pip_services3_rpc.services.RestOperations">
 <span id="pip-services3-rpc-services-restoperations-module"></span><h1>pip_services3_rpc.services.RestOperations module<a class="headerlink" href="#module-pip_services3_rpc.services.RestOperations" title="Permalink to this headline">¶</a></h1>
 <dl class="py class">
-<dt id="pip_services3_rpc.services.RestOperations.RestOperations">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">pip_services3_rpc.services.RestOperations.</span></code><code class="sig-name descname"><span class="pre">RestOperations</span></code><a class="headerlink" href="#pip_services3_rpc.services.RestOperations.RestOperations" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pip_services3_rpc.services.RestOperations.RestOperations">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">pip_services3_rpc.services.RestOperations.</span></span><span class="sig-name descname"><span class="pre">RestOperations</span></span><a class="headerlink" href="#pip_services3_rpc.services.RestOperations.RestOperations" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">pip_services3_commons.config.IConfigurable.IConfigurable</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">pip_services3_commons.refer.IReferenceable.IReferenceable</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">abc.ABC</span></code></p>
 <dl class="py method">
-<dt id="pip_services3_rpc.services.RestOperations.RestOperations.configure">
-<code class="sig-name descname"><span class="pre">configure</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">config</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services3_rpc.services.RestOperations.RestOperations.configure" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pip_services3_rpc.services.RestOperations.RestOperations.configure">
+<span class="sig-name descname"><span class="pre">configure</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">config</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">pip_services3_commons.config.ConfigParams.ConfigParams</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services3_rpc.services.RestOperations.RestOperations.configure" title="Permalink to this definition">¶</a></dt>
 <dd><p>Configures object by passing configuration parameters.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -191,18 +194,18 @@
 </dd></dl>
 
 <dl class="py method">
-<dt id="pip_services3_rpc.services.RestOperations.RestOperations.get_param">
-<code class="sig-name descname"><span class="pre">get_param</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">param</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">default</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services3_rpc.services.RestOperations.RestOperations.get_param" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pip_services3_rpc.services.RestOperations.RestOperations.get_param">
+<span class="sig-name descname"><span class="pre">get_param</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">param</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">default</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services3_rpc.services.RestOperations.RestOperations.get_param" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
-<dt id="pip_services3_rpc.services.RestOperations.RestOperations.invoke">
-<code class="sig-name descname"><span class="pre">invoke</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">operation</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services3_rpc.services.RestOperations.RestOperations.invoke" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pip_services3_rpc.services.RestOperations.RestOperations.invoke">
+<span class="sig-name descname"><span class="pre">invoke</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">operation</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">Callable</span><a class="headerlink" href="#pip_services3_rpc.services.RestOperations.RestOperations.invoke" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
-<dt id="pip_services3_rpc.services.RestOperations.RestOperations.set_references">
-<code class="sig-name descname"><span class="pre">set_references</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">references</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services3_rpc.services.RestOperations.RestOperations.set_references" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pip_services3_rpc.services.RestOperations.RestOperations.set_references">
+<span class="sig-name descname"><span class="pre">set_references</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">references</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">pip_services3_commons.refer.IReferences.IReferences</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services3_rpc.services.RestOperations.RestOperations.set_references" title="Permalink to this definition">¶</a></dt>
 <dd><p>Sets references to dependent components.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -222,7 +225,7 @@
           <footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
         <a href="pip_services3_rpc.services.RestQueryParams.html" class="btn btn-neutral float-right" title="pip_services3_rpc.services.RestQueryParams module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-        <a href="pip_services3_rpc.services.ISwaggerService.html" class="btn btn-neutral float-left" title="pip_services3_rpc.services.ISwaggerService module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="pip_services3_rpc.services.InstrumentTiming.html" class="btn btn-neutral float-left" title="pip_services3_rpc.services.InstrumentTiming module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
 
   <hr/>

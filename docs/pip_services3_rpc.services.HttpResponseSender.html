@@ -13,6 +13,8 @@
   
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
 
   
   
@@ -29,6 +31,7 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
         <script src="_static/jquery.js"></script>
         <script src="_static/underscore.js"></script>
         <script src="_static/doctools.js"></script>
@@ -187,33 +190,66 @@
 </dd>
 </dl>
 <dl class="py class">
-<dt id="pip_services3_rpc.services.HttpResponseSender.HttpResponseSender">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">pip_services3_rpc.services.HttpResponseSender.</span></code><code class="sig-name descname"><span class="pre">HttpResponseSender</span></code><a class="headerlink" href="#pip_services3_rpc.services.HttpResponseSender.HttpResponseSender" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pip_services3_rpc.services.HttpResponseSender.HttpResponseSender">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">pip_services3_rpc.services.HttpResponseSender.</span></span><span class="sig-name descname"><span class="pre">HttpResponseSender</span></span><a class="headerlink" href="#pip_services3_rpc.services.HttpResponseSender.HttpResponseSender" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <p>Helper class that handles HTTP-based responses.</p>
 <dl class="py method">
-<dt id="pip_services3_rpc.services.HttpResponseSender.HttpResponseSender._get_correlation_id">
-<em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">_get_correlation_id</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services3_rpc.services.HttpResponseSender.HttpResponseSender._get_correlation_id" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dt class="sig sig-object py" id="pip_services3_rpc.services.HttpResponseSender.HttpResponseSender.send_created_result">
+<em class="property"><span class="pre">static</span> </em><span class="sig-name descname"><span class="pre">send_created_result</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">result</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><a class="headerlink" href="#pip_services3_rpc.services.HttpResponseSender.HttpResponseSender.send_created_result" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates a callback function that sends newly created object as JSON.
+That callack function call be called directly or passed
+as a parameter to business logic components.</p>
+<p>If object is not null it returns 201 status code.
+For null results it returns 204 status code.
+If error occur it sends ErrorDescription with approproate status code.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>result</strong> – an execution result or a promise with execution result</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>JSON text response</p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py method">
-<dt id="pip_services3_rpc.services.HttpResponseSender.HttpResponseSender.send_created_result">
-<em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">send_created_result</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">result</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services3_rpc.services.HttpResponseSender.HttpResponseSender.send_created_result" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dt class="sig sig-object py" id="pip_services3_rpc.services.HttpResponseSender.HttpResponseSender.send_deleted_result">
+<em class="property"><span class="pre">static</span> </em><span class="sig-name descname"><span class="pre">send_deleted_result</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">result</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><a class="headerlink" href="#pip_services3_rpc.services.HttpResponseSender.HttpResponseSender.send_deleted_result" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates a callback function that sends newly created object as JSON.
+That callack function call be called directly or passed
+as a parameter to business logic components.</p>
+<p>If object is not null it returns 201 status code.
+For null results it returns 204 status code.
+If error occur it sends ErrorDescription with approproate status code.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>result</strong> – an execution result or a promise with execution result</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>JSON text response</p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py method">
-<dt id="pip_services3_rpc.services.HttpResponseSender.HttpResponseSender.send_deleted_result">
-<em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">send_deleted_result</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">result</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services3_rpc.services.HttpResponseSender.HttpResponseSender.send_deleted_result" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dt class="sig sig-object py" id="pip_services3_rpc.services.HttpResponseSender.HttpResponseSender.send_empty_result">
+<em class="property"><span class="pre">static</span> </em><span class="sig-name descname"><span class="pre">send_empty_result</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">result</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><a class="headerlink" href="#pip_services3_rpc.services.HttpResponseSender.HttpResponseSender.send_empty_result" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates a callback function that sends an empty result with 204 status code.
+If error occur it sends ErrorDescription with approproate status code.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>result</strong> – </p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>JSON text response</p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py method">
-<dt id="pip_services3_rpc.services.HttpResponseSender.HttpResponseSender.send_empty_result">
-<em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">send_empty_result</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">result</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services3_rpc.services.HttpResponseSender.HttpResponseSender.send_empty_result" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="pip_services3_rpc.services.HttpResponseSender.HttpResponseSender.send_error">
-<em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">send_error</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">error</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services3_rpc.services.HttpResponseSender.HttpResponseSender.send_error" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pip_services3_rpc.services.HttpResponseSender.HttpResponseSender.send_error">
+<em class="property"><span class="pre">static</span> </em><span class="sig-name descname"><span class="pre">send_error</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">error</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">str</span><a class="headerlink" href="#pip_services3_rpc.services.HttpResponseSender.HttpResponseSender.send_error" title="Permalink to this definition">¶</a></dt>
 <dd><p>Sends error serialized as ErrorDescription object and appropriate HTTP status code. If status code is not defined, it uses 500 status code.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -226,9 +262,23 @@
 </dd></dl>
 
 <dl class="py method">
-<dt id="pip_services3_rpc.services.HttpResponseSender.HttpResponseSender.send_result">
-<em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">send_result</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">result</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pip_services3_rpc.services.HttpResponseSender.HttpResponseSender.send_result" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dt class="sig sig-object py" id="pip_services3_rpc.services.HttpResponseSender.HttpResponseSender.send_result">
+<em class="property"><span class="pre">static</span> </em><span class="sig-name descname"><span class="pre">send_result</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">result</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><a class="headerlink" href="#pip_services3_rpc.services.HttpResponseSender.HttpResponseSender.send_result" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates a callback function that sends result as JSON object.
+That callack function call be called directly or passed
+as a parameter to business logic components.</p>
+<p>If object is not null it returns 200 status code.
+For null results it returns 204 status code.
+If error occur it sends ErrorDescription with approproate status code.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>result</strong> – an execution result</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>JSON text response</p>
+</dd>
+</dl>
+</dd></dl>
 
 </dd></dl>
 

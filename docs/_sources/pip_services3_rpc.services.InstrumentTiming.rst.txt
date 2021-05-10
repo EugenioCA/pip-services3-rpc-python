@@ -1,0 +1,7 @@
+pip\_services3\_rpc.services.InstrumentTiming module
+====================================================
+
+.. automodule:: pip_services3_rpc.services.InstrumentTiming
+   :members:
+   :undoc-members:
+   :show-inheritance:
