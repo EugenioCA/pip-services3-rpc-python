@@ -146,8 +146,7 @@ class HttpEndpoint(IOpenable, IConfigurable, IReferenceable):
         if self.is_open():
             return
 
-        connection = self.__connection_resolver.resolve(correlation_id)
-        if connection is None:
+        if (connection := self.__connection_resolver.resolve(correlation_id)) is None:
             raise ConfigException(correlation_id, "NO_CONNECTION", "Connection for REST client is not defined")
         self.__uri = connection.get_as_string('uri')
 

@@ -75,9 +75,8 @@ class CommandableSwaggerDocument:
         return data
 
     def __create_request_body_data(self, command: ICommand) -> Optional[Dict[str, Any]]:
-        schema_data = self.__create_schema_data(command)
 
-        if schema_data is not None:
+        if (schema_data := self.__create_schema_data(command)) is not None:
             return {
                 'content': {
                     'application/json': {

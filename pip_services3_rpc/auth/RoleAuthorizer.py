@@ -7,8 +7,7 @@ from pip_services3_rpc.services.HttpResponseSender import HttpResponseSender
 class RoleAuthorizer:
     def user_in_roles(self, roles):
         def inner(req, res, next):
-            user = req.user
-            if user is None:
+            if (user := req.user) is None:
                 HttpResponseSender.send_error(UnauthorizedException(
                     None,
                     'NOT_SIGNED',

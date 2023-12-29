@@ -79,9 +79,8 @@ class HttpConnectionResolver(IReferenceable, IConfigurable):
         # this flag just has to be present and non null for this functionality to work.
         if connection is None:
             raise ConfigException(correlation_id, "NO_CONNECTION", "HTTP connection is not set")
-        uri = connection.get_as_string('uri')
 
-        if uri is not None:
+        if (uri := connection.get_as_string('uri')) is not None:
             return None
 
         protocol = connection.get_protocol_with_default("http")
@@ -91,12 +90,10 @@ class HttpConnectionResolver(IReferenceable, IConfigurable):
                                   "Protocol is not supported by REST connection") \
                 .with_details("protocol", protocol)
 
-        host = connection.get_as_string('host')
-        if host is None:
+        if (host := connection.get_as_string('host')) is None:
             raise ConfigException(correlation_id, "NO_HOST", "Connection host is not set")
 
-        port = connection.get_as_integer('port')
-        if port == 0:
+        if (port := connection.get_as_integer('port')) == 0:
             raise ConfigException(correlation_id, "NO_PORT", "Connection port is not set")
 
         # Check HTTPS credentials
